@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo_claro">
+
+        <TextView
+            android:id="@+id/tvsalud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:drawableTop="@drawable/ic_bike"
+            android:drawableLeft="@drawable/ic_bike"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button"
+            android:layout_alignRight="@+id/tvsalud"
+            android:layout_below="@+id/tvsalud"
+            android:drawableBottom="@drawable/ic_bike"/>
+
+        <LinearLayout
+            android:id="@+id/lymain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verde_claro"
+            android:layout_below="@+id/buton"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!" />
+
+            <Button
+                android:text="button 1"
+                style="@style/mybutton"
+                />
+            <Button
+                android:text="button 2"
+                style="@style/mybutton"
+                />
+            <Button
+                android:text="button 3"
+                style="@style/mybutton"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flymain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azul_claro"
+            android:layout_below="@+id/lymain">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:textColor="#fff"
+                android:layout_gravity="bottom|right"/>
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="button"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_gradiente"
+            android:layout_below="@+id/flymain"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Texto de prueba"
+                android:textColor="@android:color/holo_blue_light"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:textAllCaps="true"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bike"
+                android:tint="#000"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tyc"
+                />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                />
+            <ImageView
+                android:layout_width="@dimen/img_ancho"
+                android:layout_height="@dimen/img_alto"
+                android:src="@drawable/android"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

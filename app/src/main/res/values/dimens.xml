@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_ancho">250dp</dimen>
+    <dimen name="img_alto">250dp</dimen>
+    <dimen name="btn_margin">8dp</dimen>
+</resources>
